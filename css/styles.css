@@ -138,10 +138,31 @@ body {
 
 .contacts-display-li {
 	margin-right: 30px;
-	display: inline-block;
+	display: inline-flex;
+	
 }
 
-.contacts-email::before{
+.contacts-display-li:nth-child(2) {
+	margin-right: 0px;
+	
+}
+
+.svg-icon{
+	display: inline-flex;
+	width: 20px;
+	height: 20px;
+}
+
+.svg-item{
+	width: 20px;
+	height: 20px;
+}
+
+.svg-link{
+	display: block;
+}
+
+/* .contacts-email::before{
 	display: block;
 content: "";
 color: black;
@@ -150,7 +171,7 @@ width: 20px;
 height: 20px;
 
 
-}
+} */
 
 
 .contacts-display-li .contacts:hover,
@@ -159,7 +180,7 @@ height: 20px;
 }
 
 .contacts-display-li .contacts {
-	display: block;
+	
 	text-decoration: none;
 }
 
