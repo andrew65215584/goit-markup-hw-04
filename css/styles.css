@@ -76,7 +76,6 @@ body {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-
 }
 
 .site-nav .logo:hover,
@@ -114,6 +113,7 @@ body {
 	font-size: 14px;
 	line-height: 1.14;
 	text-decoration: none;
+	color: var(--title-text-color);
 
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -139,27 +139,30 @@ body {
 .contacts-display-li {
 	margin-right: 30px;
 	display: inline-flex;
-	
 }
 
 .contacts-display-li:nth-child(2) {
 	margin-right: 0px;
-	
 }
 
-.svg-icon{
-	display: inline-flex;
-	width: 20px;
-	height: 20px;
+.svg-item {
+	width: 15px;
+	height: 10px;
 }
 
-.svg-item{
-	width: 20px;
-	height: 20px;
+.svg-item-envelop {
+	width: 15px;
+	height: 15px;
+	fill: var(--primary-text-color);
 }
 
-.svg-link{
-	display: block;
+.svg-item-envelop:hover {
+	fill: var(--accent-color);
+}
+
+.svg-item-telephone {
+	width: 15px;
+	height: 15px;
 }
 
 /* .contacts-email::before{
@@ -173,14 +176,19 @@ height: 20px;
 
 } */
 
-
 .contacts-display-li .contacts:hover,
 .contacts-display-li .contacts:focus {
 	color: var(--accent-color);
 }
 
 .contacts-display-li .contacts {
-	
+	color: var(--primary-text-color);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 	text-decoration: none;
 }
 
@@ -210,13 +218,13 @@ height: 20px;
 .section.hero {
 	text-align: center;
 	min-height: 600px;
-	max-width: 1600px;	
+	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: var(--secondary-background-color);
-	
-	background-image: linear-gradient(rgba(47, 48, 58, 0.8),
-	 rgba(47, 48, 58, 0.8)), url(../images/header-background.jpg);
+
+	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+		url(../images/header-background.jpg);
 
 	background-repeat: no-repeat;
 	background-position: center;
@@ -225,14 +233,11 @@ height: 20px;
 	padding-bottom: 200px;
 }
 
-.container.hero{
-text-align: center;
-width: 700px;
-
-
+.container.hero {
+	text-align: center;
+	width: 700px;
 }
 .hero-title {
-	
 	margin-top: 0px;
 	margin-bottom: 30px;
 	font-weight: 900;
@@ -612,10 +617,10 @@ width: 700px;
 .button-portfolio-li {
 	background: #f5f4fa;
 	border-radius: 4px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 22px;
-  padding-left: 22px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 22px;
+	padding-left: 22px;
 }
 
 .button-portfolio-li:hover,
@@ -687,7 +692,6 @@ width: 700px;
 	list-style: none;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	
 }
 
 .example .link {
