@@ -138,8 +138,20 @@ body {
 
 .contacts-display-li {
 	margin-right: 30px;
-	display: flex;
+	display: inline-block;
 }
+
+.contacts-email::before{
+	display: block;
+content: "";
+color: black;
+background-color: coral;
+width: 20px;
+height: 20px;
+
+
+}
+
 
 .contacts-display-li .contacts:hover,
 .contacts-display-li .contacts:focus {
