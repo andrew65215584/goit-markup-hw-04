@@ -78,11 +78,6 @@ body {
 	line-height: 1.19;
 }
 
-.site-nav .logo:hover,
-.site-nav .logo:focus {
-	color: var(--accent-color);
-}
-
 .item-nav {
 	display: flex;
 	padding: 0px;
@@ -145,6 +140,14 @@ body {
 	margin-right: 0px;
 }
 
+.contacts-display-li:hover .contacts {
+	color: #2196f3;
+}
+.contacts-display-li:hover .svg-item-envelop,
+.contacts-display-li:hover .svg-item-telephone  {
+	fill: #2196f3;
+}
+
 .svg-item {
 	width: 15px;
 	height: 10px;
@@ -156,9 +159,7 @@ body {
 	fill: var(--primary-text-color);
 }
 
-.svg-item-envelop:hover {
-	fill: var(--accent-color);
-}
+
 
 .svg-item-telephone {
 	width: 15px;
@@ -166,9 +167,7 @@ body {
 	fill: var(--primary-text-color);
 }
 
-.svg-item-telephone:hover {
-	fill: var(--accent-color);
-}
+
 
 .svg-item-benefits {
 	width: 70px;
@@ -469,8 +468,7 @@ body {
 .svg-item-social:hover{
 	background-color: var(--accent-color);
     --color3: #ffffff
-    
-    
+        
 }
 
 
@@ -499,7 +497,9 @@ body {
 }
 
 .our-usual-client-link {
-	display: block;
+	display: flex;
+	width: 50px;
+	height: 50px;
 }
 
 .our-usual-client-li:nth-child(6n) {
@@ -507,9 +507,9 @@ body {
 }
 
 
-.svg-item-clients{
-    width: 45px;
-    height: 50px;
+
+.icon-logo-4{
+	fill:#afb1b8;
 }
 
 /* footer */
@@ -604,42 +604,31 @@ body {
 
 /* button */
 .button {
-	color: var(--title-text-color);
-	background-color: var(--primary-white-color);
 
+	background-color: var(--accent-color);
+	color: white;
+	text-decoration: none;
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
 
-	text-decoration: none;
-
+	display: inline-block;
 	padding: 11px 32px;
 	min-width: 200px;
 	min-height: 50px;
 	text-align: center;
 	border-radius: 4px;
-}
-
-.button.primary {
-	color: var(--background-color);
-	background-color: var(--accent-color);
-	text-decoration: none;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	padding: 11px 32px;
-	text-align: center;
-
-	display: inline-block;
 }
 
-.button.secondary {
-	color: var(--accent-color);
-	background-color: var(--primary-white-color);
-	text-decoration: none;
-	padding: 11px 32px;
+.button.primary{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
+
 
 .button-portfolio .button-secondary:hover,
 .button-portfolio .button-secondary:focus {
