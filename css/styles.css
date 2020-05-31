@@ -630,8 +630,8 @@ body {
 }
 
 
-.button-portfolio .button-secondary:hover,
-.button-portfolio .button-secondary:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
 	color: #212121;
 }
 
