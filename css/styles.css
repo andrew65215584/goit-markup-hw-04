@@ -163,6 +163,16 @@ body {
 .svg-item-telephone {
 	width: 15px;
 	height: 15px;
+	fill: var(--primary-text-color);
+}
+
+.svg-item-telephone:hover {
+	fill: var(--accent-color);
+}
+
+.svg-item-benefits {
+	width: 70px;
+	height: 70px;
 }
 
 /* .contacts-email::before{
