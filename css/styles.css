@@ -179,6 +179,10 @@ body {
 	width: 20px;
 	height: 20px;
 }
+
+.svg-item-social:hover{
+    --color3: #ffffff
+}
 /* .contacts-email::before{
 	display: block;
 content: "";
@@ -186,8 +190,6 @@ color: black;
 background-color: coral;
 width: 20px;
 height: 20px;
-
-
 } */
 
 .contacts-display-li .contacts:hover,
@@ -438,13 +440,19 @@ height: 20px;
 
 .social-links {
 	text-decoration: none;
-	display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
 	
 }
 
-/* .social-links:hover {
-	background-color: var(--accent-color);
-} */
+ .social-links:hover {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+} 
 
 
 .social-link-li {
