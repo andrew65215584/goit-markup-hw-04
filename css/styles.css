@@ -171,10 +171,14 @@ body {
 }
 
 .svg-item-benefits {
+	width: 70px;
+	height: 70px;
+}
+
+.svg-item-social {
 	width: 20px;
 	height: 20px;
 }
-
 /* .contacts-email::before{
 	display: block;
 content: "";
