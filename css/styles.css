@@ -175,22 +175,6 @@ body {
 	height: 70px;
 }
 
-.svg-item-social {
-	width: 20px;
-	height: 20px;
-}
-
-.svg-item-social:hover{
-    --color3: #ffffff
-}
-/* .contacts-email::before{
-	display: block;
-content: "";
-color: black;
-background-color: coral;
-width: 20px;
-height: 20px;
-} */
 
 .contacts-display-li .contacts:hover,
 .contacts-display-li .contacts:focus {
@@ -445,15 +429,22 @@ height: 20px;
     justify-content: center;
     width: 44px;
     height: 44px;
-
+    border-radius: 50%;
+    
 	
 }
+.social-links{
+	fill: #AFB1B8;
+}
 
- .social-links:hover {
+.social-links:hover{
     background-color: var(--accent-color);
-    border-radius: 50%;
-} 
+}
 
+.social-links:hover .svg-item-social{
+	fill: var(--background-color);
+	
+}
 
 .social-link-li {
 	margin-right: 10px;
@@ -467,6 +458,22 @@ height: 20px;
 .social-link-li:nth-child(4n) {
 	margin-right: 0px;
 }
+
+
+.svg-item-social {
+	width: 20px;
+    height: 20px;
+    
+}
+
+.svg-item-social:hover{
+	background-color: var(--accent-color);
+    --color3: #ffffff
+    
+    
+}
+
+
 
 /* our usual clients / Наши постоянные клиенты */
 
@@ -497,6 +504,12 @@ height: 20px;
 
 .our-usual-client-li:nth-child(6n) {
 	margin-right: 0px;
+}
+
+
+.svg-item-clients{
+    width: 45px;
+    height: 50px;
 }
 
 /* footer */
