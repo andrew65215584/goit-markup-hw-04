@@ -59,6 +59,10 @@ body {
 	align-items: center;
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 .logo {
 	display: block;
 	font-family: Raleway;
@@ -588,6 +592,13 @@ body {
 	color: #ffffff;
 	margin-bottom: 21px;
 }
+
+.call-to-action-footer .call-to-action-list-flex{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.call-to-action-footer 
 
 .subscript-footer .button {
 	margin-bottom: 0px;
