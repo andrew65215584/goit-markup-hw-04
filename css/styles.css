@@ -491,9 +491,31 @@ body {
 	display: flex;
 	padding: 0px;
 	margin: 0px;
+	list-style: none;
 }
 
-.our-usual-client-li {
+.our-usual-client-list li:not(:last-child){
+	margin-right: 30px;
+}
+
+.our-usual-client-link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 90px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	text-decoration: none;
+	color: inherit;
+
+}
+
+/* .our-usual-client-li:nth-child(6n) {
+	margin-right: 0px; */
+
+
+/* .our-usual-client-li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -508,21 +530,6 @@ body {
 	border-radius: 4px;
 }
 
-.our-usual-client-link {
-	display: flex;
-	width: 50px;
-	height: 50px;
-}
-
-.our-usual-client-li:nth-child(6n) {
-	margin-right: 0px;
-}
-
-
-
-.icon-logo-4{
-	fill:#afb1b8;
-}
 
 /* footer */
 
