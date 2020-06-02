@@ -499,36 +499,38 @@ body {
 }
 
 .our-usual-client-link {
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 170px;
 	height: 90px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
-	text-decoration: none;
-	color: inherit;
+	
+	
 
 }
 
-/* .our-usual-client-li:nth-child(6n) {
-	margin-right: 0px; */
-
-
-/* .our-usual-client-li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	width: calc((100% - 3*30px) / 4);
-	height: 90px;
-	margin-right: 30px;
-
-	border: 1px solid #afb1b8;
-	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-
-	border-radius: 4px;
+.svg-item-clients{
+	fill: #AFB1B8;
 }
+
+.our-usual-client-li:focus .svg-item-clients,
+.our-usual-client-li:hover .svg-item-clients{
+
+	fill:var(--accent-color);
+	
+}
+
+.our-usual-client-li:focus .our-usual-client-link,
+.our-usual-client-li:hover .our-usual-client-link{
+
+	border: 1px solid var(--accent-color);
+	
+}
+	
+
+
 
 
 /* footer */
@@ -682,6 +684,7 @@ body {
 	padding-bottom: 6px;
 	padding-right: 22px;
 	padding-left: 22px;
+	cursor: pointer;
 }
 
 .button-portfolio-li:hover,
@@ -697,8 +700,8 @@ body {
 	letter-spacing: 0.03em;
 	color: #212121;
 }
-.button-text:hover,
-.button-text:focus {
+.button-portfolio-li:hover .button-text,
+.button-portfolio-li:focus .button-text {
 	color: var(--accent-color);
 }
 
